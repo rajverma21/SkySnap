@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <div class="logo"><span>S</span>kySnap</div>
+        <div class="searching">
+          <form action="">
+            <input id="searchbar" type="text" placeholder="Search" />
+          </form>
+          <button id="icon">
+            <i class="fa-solid fa-magnifying-glass" style="color: #33a355"></i>
+          </button>
+        </div>
+      </div>
+      <div class="image center">
+        <img id="img" src="weather1.png" alt="" />
+      </div>
+      <div class="city">
+        <h1 id="temp">22°C</h1>
+        <h3 id="city_name">New York</h3>
+      </div>
+      <div class="humidity">
+        <div class="space">
+          <i class="fa-solid fa-smog fa-2x"></i>
+          <div class="details">
+            <h4 id="humidity">64%</h4>
+            <h5>Humidity</h5>
+          </div>
+        </div>
+        <div class="space">
+          <i class="fa-solid fa-wind fa-2x"></i>
+          <div class="details">
+            <h4 id="windspeed">64 km/h</h4>
+            <h5>Wind Speed</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
